@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{xeCJK}
+\usepackage{fontspec}
+\setmainfont{Arial}
+\setCJKmainfont{Microsoft JhengHei}
+
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+% (Not needed for xelatex)
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape 朱彥勳 (Patrick Zhu)} \\ \vspace{2pt}
+    \small \href{mailto:Patrickzhu616@gmail.com}{\underline{Patrickzhu616@gmail.com}} $|$ 
+    \href{https://github.com/Patrick-zhuyanxun}{\underline{github.com/Patrick-zhuyanxun}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{學歷與證照 (Education \& Certifications)}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {國立陽明交通大學 (National Yang Ming Chiao Tung University)}{新竹, 台灣}
+      {電控工程研究所 碩士}{2024年8月 -- 至今}
+
+    \resumeSubheading
+      {國立台北科技大學 (National Taipei University of Technology)}{台北, 台灣}
+      {智慧自動化工程科 副學士 $|$ \textbf{GPA: 3.9/4.0}}{2018年8月 -- 2023年6月}
+    \resumeSubheading
+      {公務人員高等考試}{台灣}
+      {電機工程技師}{2024年}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{工作經歷 (Experience)}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {和碩聯合科技 (Pegatron)}{2022年7月 -- 2022年8月}
+      {約聘實習生 $|$ \emph{機構及工業設計中心}}{台北, 台灣}
+      \resumeItemListStart
+        \resumeItem{運用 Python 與 Open3D 函式庫開發 3D 點雲匹配系統 (GUI)，並參與量測用產線自走車之硬體機構設計}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {精浚科技 (OME Technology Co., Ltd.)}{2021年7月 -- 2021年8月}
+      {助理機構工程師 $|$ \emph{微奈米部門}}{台北, 台灣}
+      \resumeItemListStart
+        \resumeItem{負責壓電馬達定位平台與大型雷達設備之機構設計，並運用 SolidWorks 執行進階力學與運動模擬分析}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {亞太美國學校 Pacific American School}{2025年}
+      {機器人教練, Python教師}{新竹, 台灣}
+      \resumeItemListStart
+        \resumeItem{於亞太美國學校教導學生國際 VEX 機器人競賽}
+        \resumeItem{教導學生關於機構設計、電路控制等方面，協助學生獲取參與世界賽資格}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------COMPETITIONS-----------
+\section{比賽與得獎經歷 (Competitions \& Awards)}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{透過姿態辨識結合雙機械手臂進行瑕疵檢測} $|$ \emph{Python, 深度學習}}{2025年}
+          \resumeItemListStart
+            \resumeItem{榮獲 2025 經濟部 BestAI Awards AI 應用類學生組 \textbf{佳作}}
+            \resumeItem{開發結合 PSO 微調的 6D 姿態預測系統，在 T-LESS 資料集上將 CosyPose 與 SC6D 的召回率分別提升 1.79\% 與 0.82\%，推論速度達 1 秒/張}
+            \resumeItem{設計雙機械手臂協作與相機視角轉換與自動標註資料，提升標註效率與檢測視野與涵蓋率}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{永續能源智慧風扇控制系統} $|$ \emph{Python, IoT, LSTM}}{2022年}
+          \resumeItemListStart
+            \resumeItem{榮獲 2022 永續能源創意實作競賽 全國大專綠能創新組 \textbf{銀牌獎}}
+            \resumeItem{處理溫濕度 IoT 感測數據，建立基於 LSTM 的時間序列預測模型動態調節 EC 風扇轉速，達成實質節能效率}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{第23屆、24屆 全國 TDK 盃機器人競賽}}{2019年 -- 2020年}
+          \resumeItemListStart
+            \resumeItem{榮獲 第24屆 \textbf{亞軍} 及 第23屆 \textbf{八強}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{專案經歷 (Projects)}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{語音識別機械手軟夾控制應用} $|$ \emph{Python, ROS 2, LLM, Whisper, PCL}}{2025年}
+          \resumeItemListStart
+            \resumeItem{整合 OpenAI Whisper、Qwen3B 與 YOLOE 建立語音指令物件辨識系統，成功率達 90\%}
+            \resumeItem{利用 PCL 進行點雲轉換生成夾取姿態，並透過 ROS 2 MoveIt MTC 規劃手臂路徑，將整體系統反應時間（含語音分析 5 秒與路徑生成 5 秒）優化至 10 秒}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{智能垃圾桶 (Autonomous Trash Can)} $|$ \emph{ROS Noetic, Raspberry Pi, Arduino, MoveIt}}{2023年}
+          \resumeItemListStart
+            \resumeItem{與 MIT Media Lab 合作開發 (CSL UROP) APP 呼叫導航垃圾桶；負責核心機電整合與創新螺紋開蓋機構設計，串接 Raspberry Pi 與 Arduino 執行硬體控制}
+            \resumeItem{運用 ROS MoveIt 與 RRT 演算法建構自主路徑規劃，並結合感測數據建立使用者垃圾量統計排行榜}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{專業技能 (Technical Skills)}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{程式語言}{: Python, C/C++, Linux Shell, AI agent } \\
+     \textbf{框架與工具}{: ROS 1 / ROS 2, LeRobot, 樹莓派, IsaacSim, Pytorch, TensorFlow, MoveIt, Git, SolidWorks} \\
+     \textbf{專業領域}{: 強化學習、影像處理、深度學習、機器人控制、機構設計、機電整合} \\
+     \textbf{語言}{: 英文 (TOEIC: 800分)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
